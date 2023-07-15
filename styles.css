@@ -1,0 +1,85 @@
+.sky{
+    padding : 180px;
+    padding-bottom: 150px;
+    background-color: skyblue;    
+}
+
+.sky .cloud1{
+   position : absolute;
+   right : 10px;
+   top : 150px;   
+   opacity:60%;
+   animation-name: wind2;
+    animation-duration: 40s;
+    animation-iteration-count: infinite;    
+    /* animation-direction: reverse; */
+}
+
+.sky .cloud2{
+    position : absolute;
+    left : 50px;
+    top : 30px; 
+    scale :1.2; 
+    animation-name: wind1;
+    animation-duration: 30s;
+    animation-iteration-count: infinite; 
+ }
+
+.grass{
+    background-color: rgb(148, 201, 69);
+}
+
+.road1{
+    border-top : solid 15px rgb(116, 106, 106);
+    background-color: rgb(97, 88, 88);
+    padding : 40px 0;
+    border-bottom : dashed 15px white;    
+}
+
+.road2{
+    border-bottom : solid 15px rgb(116, 106, 106);
+    background-color: rgb(97, 88, 88);
+    padding : 0;
+}
+
+.mario{
+    padding-left:40px;
+    animation-name: drive;
+    animation-duration: 9.7s;
+    
+    animation-iteration-count: 1;
+    
+}
+
+.lungi{
+    
+    animation-name: drive;
+    animation-duration: 10s;
+    
+    animation-iteration-count: 1;
+}
+
+@keyframes drive{
+    from{
+        transform : translateX(40px)
+    }
+    to{
+        transform : translateX(2500px)
+    }
+}
+
+@keyframes wind1{
+    from
+    {left :100px}
+    to
+    {left: 120%}
+}
+
+@keyframes wind2{
+    from
+    {left :1900px}
+    to
+    {left: -40%}
+}
+
+
